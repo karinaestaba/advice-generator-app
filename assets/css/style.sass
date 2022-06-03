@@ -74,7 +74,7 @@ body
     grid-column: 1/1
     grid-row: 4/6
 
-    .icon
+    .cta-icon
       width: 64px
       height: 64px
       border-radius: 50%
@@ -84,12 +84,22 @@ body
       justify-content: center
       align-items: center
 
+      &:hover
+        img
+          box-shadow: 0 0 39px 17px $neon_green
+          transition: all .3s
+
   &-divider
     display: block
-    width: 100%
-    margin: 20px 0
+    padding-left: 6px
+    padding-right: 6px
 
-@media screen and ( min-width: 998px )
+    img
+      display: block
+      width: 100%
+      margin: 20px 0
+
+@media screen and ( min-width: 658px )
   body
     justify-content: center
 
@@ -115,9 +125,8 @@ body
       padding-top: 59px
 
     &-divider
-      margin-top: 25px
-      margin-bottom: 0
-
-    picture
-      display: block
       padding: 14px 29px 30px
+
+      img
+        margin-top: 25px
+        margin-bottom: 0
