@@ -85,15 +85,15 @@ q
     letter-spacing: 3px
     padding-bottom: 25px
     margin-top: -3px
-    // animation: scaleUpCenter .5s ease 0s 1 normal forwards
+    animation: scaleUpCenter .5s ease 0s 1 normal forwards
 
   .message
     font-weight: 800
     font-size: 24px
     line-height: 34px
     margin-top: -7px
-    // opacity: 0
-    // animation: fadeIn 2s linear 0s 1 normal forwards
+    opacity: 0
+    animation: fadeIn 2s linear 0s 1 normal forwards
 
     &:before 
       content: open-quote
@@ -107,7 +107,7 @@ q
     background-color: config.$dark_grayish_blue
     grid-column: 1/1
     grid-row: 1/5
-    // animation: slideUp 1s ease 0s 1 normal forwards
+    animation: slideUp 1s ease 0s 1 normal forwards
 
   &-footer
     grid-column: 1/1
@@ -150,7 +150,7 @@ q
     border-radius: 50%
     background-color: config.$dark_grayish_blue
     box-shadow: 9999px 0 0 -5px config.$dark_grayish_blue
-    // animation: dotPulse 1.5s infinite linear
+    animation: dotPulse 1.5s infinite linear
     animation-delay: .25s
 
     &::before, &::after
@@ -164,13 +164,13 @@ q
 
     &::before
       box-shadow: 9984px 0 0 -5px config.$dark_grayish_blue
-      // animation: dotPulseBefore 1.5s infinite linear
+      animation: dotPulseBefore 1.5s infinite linear
       animation-delay: 0s
       left: -13px
 
     &::after
       box-shadow: 10014px 0 0 -5px config.$dark_grayish_blue
-      // animation: dotPulseAfter 1.5s infinite linear
+      animation: dotPulseAfter 1.5s infinite linear
       animation-delay: .5s
 
 @media screen and ( min-width: 658px )
