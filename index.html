@@ -9,15 +9,13 @@
   <title>Advice generator app</title>
 </head>
 <body>
-  <main class="main-content">
-    <article class="card-advice" id="cardAdvice">
+  <main class="main-content" id="mainContent">
+    <article class="card-advice" id="adviceCard">
       <div class="card-advice-body">
-        <h1 id="adviceTitle">Advice #117</h1>
-        <p class="message" id="adviceMessage">
-          "It is easy to sit up and take
+        <h1>Advice # <span id="adviceTitle">117</span></h1>
+        <q class="message" id="adviceMessage">It is easy to sit up and take
           notice, what's difficult is getting
-          up and taking action."
-        </p>
+          up and taking action.</q>
 
         <picture class="card-advice-divider">
           <source media="(min-width: 998px)" srcset="assets/images/pattern-divider-desktop.svg">
@@ -25,13 +23,17 @@
         </picture>
       </div>
 
+      <div class="loading-box" id="loader">
+        <div class="dot-pulse"></div>
+      </div>
+
       <footer class="card-advice-footer">
-        <a href="#!" class="cta-icon">
+        <button class="cta-icon" id="adviceRefreshButton">
           <img src="assets/images/icon-dice.svg" alt="Dice" width="25">
-        </a>
+        </button>
       </footer>
     </article>
   </main>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
