@@ -1,5 +1,5 @@
-@use "sass/_vars" as config
-@use "sass/animations"
+@use "_vars" as config
+@use "animations"
 
 *
   box-sizing: border-box
@@ -23,10 +23,11 @@ body
   font-size: config.$font_size
   line-height: 32px
 
-  display: flex
-  flex-direction: column
-  justify-content: space-around
-  align-content: center
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr auto
+  justify-content: center
+  align-items: center
 
 q
   display: block
@@ -172,6 +173,21 @@ q
       box-shadow: 10014px 0 0 -5px config.$dark_grayish_blue
       animation: dotPulseAfter 1.5s infinite linear
       animation-delay: .5s
+
+.credits
+  text-align: center
+  font-size: 12px
+  padding: 20px
+  color: config.$grayish_blue
+
+  a
+    text-decoration: none
+    color: lighten(config.$grayish_blue, 20)
+    white-space: nowrap
+    transition: all 0.5s ease
+
+    &:hover
+      color: lighten(config.$grayish_blue, 30 )
 
 @media screen and ( min-width: 658px )
   body
